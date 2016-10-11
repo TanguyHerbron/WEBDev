@@ -1,0 +1,159 @@
+figure {
+	width: 200px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+/* Shine */
+.hover14 figure {
+	position: relative;
+}
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover14 figure:hover::before {
+	-webkit-animation: shine 1s;
+	animation: shine 1s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 250%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 250%;
+	}
+}
+
+figure {
+    border: 5px solid rgb(81, 119, 158);
+}
+
+.fade {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+.presentationAlexandre {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationArthur {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationAxel {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationGabriel {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationGiovanni {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationGwendal {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationKylian {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationTanguy {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationMaxence {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationPhilippe {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationDamien {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+.presentationVictor {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+}
+
+#topWankul {
+    margin-top: 20px;
+}

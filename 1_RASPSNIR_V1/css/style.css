@@ -1,0 +1,124 @@
+body
+{
+    margin: 0;
+    background: linear-gradient(180deg,#eceff1 ,#cfd8dc);
+    background-size : 100%;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+
+nav {
+    background-color: #1e88e5 ;
+}
+
+#nav-mobile {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.dropdown-content {
+    background-color: #284A6F;
+}
+
+.dropdown-content:hover {
+    background-color: #284A6F;
+}
+
+.dropdown-content li>a {
+    color: white;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #284A6F;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+    color: rgb(81, 119, 158);
+}
+
+.collapsible-body {
+    background-color: lightgrey;
+}
+
+#n1 {
+    color: gold;
+}
+
+#n2 {
+    color: grey;
+}
+
+#n3 {
+    color: saddlebrown;
+}
+
+#n {
+    color: #284A6F;
+}
+
+.collapsible-body > img {
+    margin: 0 auto;
+}
+
+#siteSection
+{
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;   
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;/* Reset default border */
+}
+
+.material-icons {
+    color: #284A6F;
+}
+
+@media screen and (max-width: 500px) {
+    .hs_icon
+    {
+        display: none;
+    }
+}
+
+.input-field input[type=text]:focus + label {
+     color: #284A6F;
+   }
+
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #284A6F;
+     box-shadow: 0 1px 0 0 #284A6F;
+   }
+
+.input-field .prefix.active {
+     color: #000;
+   }
+
+.dropdown-content li>a, .dropdown-content li>span {
+    color: white;
+}
+
+.dropdown-content li>a, .dropdown-content li>span:hover {
+    color: black;
+}
+
+.select-dropdown li.disabled, .select-dropdown li.disabled>span, .select-dropdown li.optgroup {
+    color: rgba(255,255,255,0.3)
+}
+
+
+.tetris {
+    width:350px;
+    height:700px;
+    margin: auto;
+    margin-top: 25px;
+    border: 3px solid #284A6F;
+}
+
+.tetris-play {
+    margin-top: 10%;
+}

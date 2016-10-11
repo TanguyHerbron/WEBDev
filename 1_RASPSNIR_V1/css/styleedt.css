@@ -1,0 +1,36 @@
+
+table, th, td {
+    border: 2px solid black;
+}
+
+td{
+    text-align: center;
+}
+
+.info{
+    background-color: #cddc39;
+}
+
+.physique{
+    background-color: #e040fb;
+}
+
+.maths{
+    background-color: #009688;
+}
+
+.anglais{
+    background-color: #1565c0;
+}
+
+.francais{
+    background-color: #ff5252;
+}
+
+.economie{
+    background-color: #5d4037;
+}
+
+.ap{
+    background-color: #90a4ae;
+}
