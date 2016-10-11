@@ -1,27 +1,28 @@
 <?php
 
-require_once 'includes/bdd.php';
+require_once 'includes/bdd.php'; //Connexion serveur SQL
 
-define("NOMBASE", "games");
+define("NOMBASE", "games"); //Definir la base de données à utiliser
 
 try {
     $bdd = new PDO('mysql:host=' . HOTE . ';dbname=' . NOMBASE, LOGIN, MDP);
 } catch (Excpetion $ex) {
     die('Pb connexion serveur BD' . $ex->getMessage());
-}
+} //Connexion à la base de données
 
-$req = $bdd->prepare("SELECT pseudo, score FROM tetris ORDER BY score DESC;");
+$req = $bdd->prepare("SELECT pseudo, score FROM tetris ORDER BY score DESC;"); //Selection du pseudo et score de facçon décroissante en fonction du score
 
-$req->execute() or die(print_r($requete->errorInfo()));
+$req->execute() or die(print_r($requete->errorInfo())); //Execution de la requete
 
 $affichScore = "";
 $id = 0;
 
-while ($ligne = $req->fetch())
+while ($ligne = $req->fetch()) //Affichage du resultat de la requete
 {
     $pseudo = htmlentities($ligne["pseudo"], ENT_QUOTES);
     $score = htmlentities($ligne["score"], ENT_QUOTES);
     $id++;
+    //Concaténation du resultat
     $affichScore .= "<li><div id=\"n$id\" class=\"collapsible-header\"><i id=\"n$id\" class=\"badge\">$id</i>$pseudo</div>
     <div class=\"collapsible-body\"><br/><p>Total de points : $score</p></div></li>";
 }
@@ -74,7 +75,7 @@ while ($ligne = $req->fetch())
             <div class="row">
                 <div class="col s12">
                     <ul class="collapsible popout" data-collapsible="accordion">
-                        <?php echo $affichScore; ?>
+                        <?php echo $affichScore; //Affichage du resultat ?>
                     </ul>
                 </div>
             </div>
@@ -86,7 +87,7 @@ while ($ligne = $req->fetch())
 
     <script src="js/blockrain.jquery.js"></script>
     <script>
-        $('#save').submit(function(){
+        $('#save').submit(function(){ //Validation du score
             var score = $(".game").blockrain('score');
             $("input[name='score'").val(score);
             return;
