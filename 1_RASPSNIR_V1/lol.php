@@ -1,7 +1,17 @@
+//   _        _______  _       
+//  ( \      (  ___  )( \      
+//  | (      | (   ) || (      
+//  | |      | |   | || |      
+//  | |      | |   | || |      
+//  | |      | |   | || |      
+//  | (____/\| (___) || (____/\
+//  (_______/(_______)(_______/
+//                             
+
 <?php
 
-require_once 'includes/bdd.php';
-define("NOMBASE", "lol");
+require_once 'includes/bdd.php'; //Inclusion de la connexion au serveur SQL.
+define("NOMBASE", "lol"); //Selection de la base de données.
 
 try {
     $bdd = new PDO('mysql:host=' . HOTE . ';dbname=' . NOMBASE, LOGIN, MDP);
@@ -9,12 +19,12 @@ try {
     die('Pb connexion serveur BD' . $ex->getMessage());
 }
 
-$req = $bdd->prepare("select name, rank, leaguename, points FROM users ORDER BY points DESC");
-$req->execute() or die(print_r($req->errorInfo()));
+$req = $bdd->prepare("select name, rank, leaguename, points FROM users ORDER BY points DESC"); //Préparation de la requete.
+$req->execute() or die(print_r($req->errorInfo())); //Execution de la requete.
 
 $id = 0;
 
-while ($ligne = $req->fetch())
+while ($ligne = $req->fetch()) //A chaque detection de valeur, ecrit les valeurs.
 {
 	$name = htmlentities($ligne["name"], ENT_QUOTES);
 	$rank = $ligne["rank"];

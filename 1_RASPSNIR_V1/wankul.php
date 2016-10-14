@@ -1,3 +1,13 @@
+//            _______  _        _                 _        _______ 
+//  |\     /|(  ___  )( (    /|| \    /\|\     /|( \      (  ____ \
+//  | )   ( || (   ) ||  \  ( ||  \  / /| )   ( || (      | (    \/
+//  | | _ | || (___) ||   \ | ||  (_/ / | |   | || |      | (_____ 
+//  | |( )| ||  ___  || (\ \) ||   _ (  | |   | || |      (_____  )
+//  | || || || (   ) || | \   ||  ( \ \ | |   | || |            ) |
+//  | () () || )   ( || )  \  ||  /  \ \| (___) || (____/\/\____) |
+//  (_______)|/     \||/    )_)|_/    \/(_______)(_______/\_______)
+//                                                                                                            
+
 <!DOCTYPE html>
 <html>
 
@@ -16,7 +26,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/stylewankul.css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-        <?php include 'includes/navbar.php'; ?>
+        <?php include 'includes/navbar.php'; //Inclusion de notre barre de naviagtion ?>
 
     </head>
     <body>
@@ -160,18 +170,6 @@
                         </div>
                     </figure>
                 </div>
-				<!--<div class="col s3 hover14">
-                    <figure>
-                        <div class="figureVictor">
-                            <div class="presentationVictor">
-                                <p class="fade">
-                                    Victor <br> LDZ
-                                </p>
-                            </div>
-                            <img width="200px" height="200px" src="img/Wankul/Victor.jpg" />
-                        </div>
-                    </figure>
-                </div>-->
             </div>
         </div>
 		
